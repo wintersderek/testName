@@ -1,0 +1,13 @@
+{
+	"role" : {
+		"name" : "nameTablesAccessOwner#",
+		"object_privileges" : [
+			{
+				"name" : "nameTables.Header",
+				"type" : "TABLE",
+				"privileges" : [ "SELECT" ],
+				"privileges_with_grant_option" : [ "SELECT" ]
+			}
+		]
+	}
+}

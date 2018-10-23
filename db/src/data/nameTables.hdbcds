@@ -1,0 +1,18 @@
+context nameTables {
+	type BusinessKey : String(10);
+    type HistoryT {
+        CREATEDBY : BusinessKey;
+        CREATEDAT : LocalDate;
+        CHANGEDBY : BusinessKey;
+        CHANGEDAT : LocalDate;
+    };
+    
+    entity Header {
+    	key ID : BusinessKey;
+    	    CO_NAME : String(50);
+    	    HISTORY : HistoryT;
+    	
+    } technical configuration {
+    	column store;
+    };
+};
